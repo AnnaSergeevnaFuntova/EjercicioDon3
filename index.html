@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cambiar Color</title>
+  <style>
+    /* Estilo del área de visualización */
+    #areaVisualizacion {
+      width: 100px;
+      height: 100px;
+      border: 1px solid #000;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cambiar Color</h1>
+
+  <div id="areaVisualizacion"></div>
+
+  <button id="botonRosa">Cambiar a Rosa</button>
+  <button id="botonAmarillo">Cambiar a Amarillo</button>
+
+  <script>
+    // Función para cambiar el color a rosa
+    function cambiarRosa() {
+      const area = document.getElementById("areaVisualizacion");
+      area.style.backgroundColor = "pink";
+    }
+
+    // Función para cambiar el color a amarillo
+    function cambiarAmarillo() {
+      const area = document.getElementById("areaVisualizacion");
+      area.style.backgroundColor = "yellow";
+    }
+
+    // Obtener referencias a los botones
+    const botonRosa = document.getElementById("botonRosa");
+    const botonAmarillo = document.getElementById("botonAmarillo");
+
+    // Agregar escuchadores de eventos a los botones
+    botonRosa.addEventListener("click", cambiarRosa);
+    botonAmarillo.addEventListener("click", cambiarAmarillo);
+  </script>
+</body>
+</html>
